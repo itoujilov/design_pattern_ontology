@@ -41,10 +41,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</dc:rights>
         <dc:title xml:lang="en">Design Pattern Ontology Base</dc:title>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -52,7 +52,7 @@ THE SOFTWARE.</dc:rights>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/bibliographicCitation -->
@@ -70,21 +70,59 @@ THE SOFTWARE.</dc:rights>
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-
+    
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
 
 
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#abstract_class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <rdfs:comment xml:lang="en">An abstract class.
+In a software engineering implementation, this class cannot be instantiated. In an ontology, this class can be instantiated for meta-modelling purposes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#concrete_class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <rdfs:comment xml:lang="en">A concrete class.
+This class can be instantiated in a software engineering implementation and, for meta-modelling purposes, in an ontology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class">
+        <rdfs:comment xml:lang="en">An object-oriented class.
+This is an artifact of software engineering.</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
 
 
