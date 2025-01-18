@@ -105,6 +105,12 @@ THE SOFTWARE.</dc:rights>
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#instantiates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#instantiates"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
