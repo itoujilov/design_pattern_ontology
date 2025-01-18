@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory/1.0.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.0.0"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a module of the design pattern ontology.
 It describes the abstract factory pattern. This ontology is based on the book:
@@ -71,7 +72,6 @@ THE SOFTWARE.</dc:rights>
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
 </rdf:RDF>
 
 
