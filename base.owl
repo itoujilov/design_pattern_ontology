@@ -15,9 +15,16 @@ Design patterns: elements of reusable object-oriented software. 1994
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a base module of the ontology.
 It contains common definitions used in other modules which should import this module.
+
 This ontology is based on the book: E. Gamma, R. Helm, R. Johnson, J. Vlissides,
 Design patterns (see the bibliographic citation annotation for the full reference).
-        </dc:description>
+
+Naming conventions used in this ontology follow the formalised rules described in details
+in the MELO project: https://sourceforge.net/p/meloproject/wiki/formalised_naming_conventions/.
+In short, ontological entities are named in natural language words as they are, i.e. without
+changing the case, and underscores as word separators. The original noun entities from
+the cited book are treated as proper nouns and their spelling is preserved. They are mostly
+found in specific ontology modules, not in this base module.</dc:description>
         <dc:rights xml:lang="en">The MIT License
 
 Copyright 2025 Igor Toujilov.
