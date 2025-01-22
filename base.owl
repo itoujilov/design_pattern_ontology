@@ -24,7 +24,12 @@ in the MELO project: https://sourceforge.net/p/meloproject/wiki/formalised_namin
 In short, ontological entities are named in natural language words as they are, i.e. without
 changing the case, and underscores as word separators. The original noun entities from
 the cited book are treated as proper nouns and their spelling is preserved. They are mostly
-found in specific ontology modules, not in this base module.</dc:description>
+found in specific ontology modules, not in this base module.
+
+Comments on the ontological entities, when they are needed to clarify their meanings,
+follow the Doxygen format described in https://www.doxygen.nl/manual/docblocks.html/.
+Usually, a comment consists of up to two parts: a human-readable single-line name of the entity,
+followed by one or more sentences, describing the meaning.</dc:description>
         <dc:rights xml:lang="en">The MIT License
 
 Copyright 2025 Igor Toujilov.
