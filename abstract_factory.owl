@@ -72,6 +72,27 @@ THE SOFTWARE.</dc:rights>
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
+        <rdfs:comment xml:lang="en">An abstract factory.
+This class defines an interface for operations that create abstract product objects.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
