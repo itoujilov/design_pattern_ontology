@@ -93,6 +93,16 @@ THE SOFTWARE.</dc:rights>
         <rdfs:comment xml:lang="en">An abstract factory.
 This class defines an interface for operations that create abstract product objects.</rdfs:comment>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <rdfs:comment xml:lang="en">A concrete factory.
+This class implements the operations to create product objects.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
