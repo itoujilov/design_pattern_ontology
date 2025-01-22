@@ -6,6 +6,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="http://www.semanticweb.org/design_pattern_ontology/base#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory/1.0.0"/>
@@ -100,6 +101,7 @@ This class defines an interface for operations that create abstract product obje
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory"/>
         <rdfs:comment xml:lang="en">A concrete factory.
 This class implements the operations to create product objects.</rdfs:comment>
     </owl:NamedIndividual>
