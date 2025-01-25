@@ -97,6 +97,17 @@ This class defines an interface for operations that create abstract product obje
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractProduct -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractProduct">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
+        <rdfs:comment xml:lang="en">An abstract product.
+This class defines an interface for product objects which can be any objects
+produced by a factory object.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory">
