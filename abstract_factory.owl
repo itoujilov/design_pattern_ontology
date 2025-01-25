@@ -118,6 +118,7 @@ produced by a factory object.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
         <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory"/>
+        <base:instantiates rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct"/>
         <rdfs:comment xml:lang="en">A concrete factory.
 This class implements the operations to create product objects.</rdfs:comment>
     </owl:NamedIndividual>
@@ -128,6 +129,7 @@ This class implements the operations to create product objects.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractProduct"/>
         <rdfs:comment xml:lang="en">A concrete product.
 This class defines a product object to be created by the corresponding concrete factory.</rdfs:comment>
     </owl:NamedIndividual>
