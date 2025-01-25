@@ -121,6 +121,16 @@ produced by a factory object.</rdfs:comment>
         <rdfs:comment xml:lang="en">A concrete factory.
 This class implements the operations to create product objects.</rdfs:comment>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <rdfs:comment xml:lang="en">A concrete product.
+This class defines a product object to be created by the corresponding concrete factory.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
