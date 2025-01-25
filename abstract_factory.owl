@@ -92,7 +92,12 @@ THE SOFTWARE.</dc:rights>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
         <rdfs:comment xml:lang="en">An abstract factory.
-This class defines an interface for operations that create abstract product objects.</rdfs:comment>
+This class defines an interface for operations that create references to abstract
+product objects. Abstract product objects cannot be created because they are
+abstract. References to abstract product objects can be created through
+instantiating concrete product objects and obtaining references to them.
+This definition corrects the original definition in the book:
+E. Gamma, R. Helm, R. Johnson, J. Vlissides, Design patterns.</rdfs:comment>
     </owl:NamedIndividual>
     
 
