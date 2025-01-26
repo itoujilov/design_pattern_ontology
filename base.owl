@@ -145,12 +145,33 @@ In a software engineering implementation, this class cannot be instantiated. In 
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#behavioral_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#behavioral_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#design_pattern_participant"/>
+        <rdfs:comment xml:lang="en">A behavioral pattern participant.
+This is a participant of a pattern, having the primary purpose to design the
+ways in which classes or objects interact and distribute responsibility.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/design_pattern_ontology/base#concrete_class -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
         <rdfs:comment xml:lang="en">A concrete class.
 This class can be instantiated in a software engineering implementation and, for meta-modelling purposes, in an ontology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#creational_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#creational_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#design_pattern_participant"/>
+        <rdfs:comment xml:lang="en">A creational pattern participant.
+This is a participant of a pattern, having the primary purpose of object creation.</rdfs:comment>
     </owl:Class>
     
 
@@ -171,6 +192,17 @@ a design pattern is composed of many interrelated and collaborating participants
     <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class">
         <rdfs:comment xml:lang="en">An object-oriented class.
 This is an artifact of software engineering.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#structural_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#structural_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#design_pattern_participant"/>
+        <rdfs:comment xml:lang="en">A structural pattern participant.
+This is a participant of a pattern, having the primary purpose to compose
+object-oriented classes.</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
