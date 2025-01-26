@@ -155,6 +155,17 @@ This class can be instantiated in a software engineering implementation and, for
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#design_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#design_pattern_participant">
+        <rdfs:comment xml:lang="en">A design pattern participant.
+This is a software engineering entity (an object-oriented class, an object, etc.)
+which participates in a design pattern. Normally, an implementation of
+a design pattern is composed of many interrelated and collaborating participants.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class">
