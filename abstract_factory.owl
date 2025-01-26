@@ -79,6 +79,27 @@ THE SOFTWARE.</dc:rights>
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#abstract_factory_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#abstract_factory_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#creational_pattern_participant"/>
+        <rdfs:comment xml:lang="en">An abstract factory pattern participant.
+This is a participant of the abstract factory pattern.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
