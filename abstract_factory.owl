@@ -16,7 +16,9 @@
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a module of the design pattern ontology.
 It describes the abstract factory pattern. This ontology is based on the book:
-E. Gamma, R. Helm, R. Johnson, J. Vlissides, Design patterns.</dc:description>
+E. Gamma, R. Helm, R. Johnson, J. Vlissides, Design patterns.
+
+Run a reasoner to see participants, classified under the abstract factory pattern.</dc:description>
         <dc:rights xml:lang="en">The MIT License
 
 Copyright 2025 Igor Toujilov.
