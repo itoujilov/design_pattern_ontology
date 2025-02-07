@@ -29,7 +29,23 @@ found in specific ontology modules, not in this base module.
 Comments on the ontological entities, when they are needed to clarify their meanings,
 follow the Doxygen format described in https://www.doxygen.nl/manual/docblocks.html/.
 Usually, a comment consists of up to two parts: a human-readable single-line name of the entity,
-followed by one or more sentences, describing the meaning.</dc:description>
+followed by one or more sentences, describing the meaning.
+
+How to Use This Ontology
+
+This ontology module is just a base of a larger ontology consisting of several modules, devoted
+to specific design patterns, importing this module. So, the usage of this module as stand-alone
+is limited. However, there are three main use cases for more specific modules:
+
+- Reading the formal conceptualisation of a design pattern helps to understand it properly
+and unambiguously.
+
+- Having your own existing design, you can specify it in terms of this ontology, then run
+a reasoner and see matching standard design patterns.
+
+- When you are targeting your new implementation of a design pattern, you can specify
+the current implementation status in terms of this ontology and run a reasoner to check
+the progress of your implementation.</dc:description>
         <dc:rights xml:lang="en">The MIT License
 
 Copyright 2025 Igor Toujilov.
