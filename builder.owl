@@ -12,7 +12,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder/1.0.0"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.0.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a module of the design pattern ontology.
 It describes the builder pattern. This ontology is based on the book:
