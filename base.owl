@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.1.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
@@ -30,6 +30,8 @@ Comments on the ontological entities, when they are needed to clarify their mean
 follow the Doxygen format described in https://www.doxygen.nl/manual/docblocks.html/.
 Usually, a comment consists of up to two parts: a human-readable single-line name of the entity,
 followed by one or more sentences, describing the meaning.
+
+This ontology uses the Semantic Versioning 2.0.0 policy, https://semver.org/.
 
 How to Use This Ontology
 
@@ -121,6 +123,12 @@ THE SOFTWARE.</dc:rights>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#aggregates_instance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#aggregates_instance"/>
     
 
 
