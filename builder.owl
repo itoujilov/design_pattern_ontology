@@ -63,6 +63,27 @@ THE SOFTWARE.</dc:rights>
         <rdfs:comment xml:lang="en">A builder pattern participant.
 This is a participant of the builder pattern.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#director -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#director">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <rdfs:comment xml:lang="en">A director.
+The director constructs the product using the builder interface.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
