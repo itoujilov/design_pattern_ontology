@@ -91,6 +91,7 @@ This class specifies an interface for creating parts of a product.</rdfs:comment
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#director">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <base:aggregates_instance rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder"/>
         <rdfs:comment xml:lang="en">A director.
 The director constructs the product using the builder interface.</rdfs:comment>
     </owl:NamedIndividual>
