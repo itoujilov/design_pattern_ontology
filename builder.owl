@@ -77,6 +77,16 @@ This is a participant of the builder pattern.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
+        <rdfs:comment xml:lang="en">An abstract builder.
+This class specifies an interface for creating parts of a product.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/design_pattern_ontology/builder#director -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#director">
