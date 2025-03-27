@@ -77,9 +77,9 @@ This is a participant of the builder pattern.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder -->
+    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#AbstractBuilder -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#AbstractBuilder">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
         <rdfs:comment xml:lang="en">An abstract builder.
 This class specifies an interface for creating parts of a product.</rdfs:comment>
@@ -87,11 +87,11 @@ This class specifies an interface for creating parts of a product.</rdfs:comment
     
 
 
-    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#director -->
+    <!-- http://www.semanticweb.org/design_pattern_ontology/builder#Director -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#director">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#Director">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
-        <base:aggregates_instance rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder#abstract_builder"/>
+        <base:aggregates_instance rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder#AbstractBuilder"/>
         <rdfs:comment xml:lang="en">A director.
 The director constructs the product using the builder interface.</rdfs:comment>
     </owl:NamedIndividual>
