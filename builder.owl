@@ -92,6 +92,7 @@ This class specifies an interface for creating parts of a product.</rdfs:comment
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/builder#ConcreteBuilder">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
         <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder#AbstractBuilder"/>
+        <base:instantiates rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder#Product"/>
     </owl:NamedIndividual>
     
 
