@@ -10,6 +10,11 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/all_patterns">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/all_patterns/0.0.0"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
+        <dc:description xml:lang="en">This is an aggregation of all current patterns in the design patterns
+described in the book:
+E. Gamma, R. Helm, R. Johnson, J. Vlissides, Design patterns.
+
+Run a reasoner to see participants, classified under different patterns.</dc:description>
     </owl:Ontology>
 </rdf:RDF>
 
