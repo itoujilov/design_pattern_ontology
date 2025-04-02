@@ -11,6 +11,7 @@
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/all_patterns">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/all_patterns/0.0.0"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/builder"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is an aggregation of all current patterns in the design patterns
 described in the book:
