@@ -6,9 +6,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="http://www.semanticweb.org/design_pattern_ontology/base#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/all_patterns">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/all_patterns/0.0.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is an aggregation of all current patterns in the design patterns
 described in the book:
