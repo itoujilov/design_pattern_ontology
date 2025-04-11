@@ -11,7 +11,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory/1.0.1"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory/2.0.1"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a module of the design pattern ontology.
@@ -143,7 +143,7 @@ produced by a factory object.</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteFactory">
         <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
         <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractFactory"/>
-        <base:instantiates rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct"/>
+        <base:instantiates rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#Factory"/>
         <rdfs:comment xml:lang="en">A concrete factory.
 This class implements the operations to create product objects.</rdfs:comment>
     </owl:NamedIndividual>
@@ -157,6 +157,15 @@ This class implements the operations to create product objects.</rdfs:comment>
         <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#AbstractProduct"/>
         <rdfs:comment xml:lang="en">A concrete product.
 This class defines a product object to be created by the corresponding concrete factory.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/abstract_factory#Factory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#Factory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object"/>
+        <base:instantiates rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#ConcreteProduct"/>
     </owl:NamedIndividual>
     
 
@@ -179,6 +188,9 @@ This class defines a product object to be created by the corresponding concrete 
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#CP">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#o">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -250,13 +262,38 @@ This class defines a product object to be created by the corresponding concrete 
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                                 <rdf:first>
                                                                     <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#instantiates"/>
-                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#CF"/>
-                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#CP"/>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object"/>
+                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
                                                                     </rdf:Description>
                                                                 </rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#instantiates"/>
+                                                                                <swrl:argument1 rdf:resource="urn:swrl:var#CF"/>
+                                                                                <swrl:argument2 rdf:resource="urn:swrl:var#o"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#instantiates"/>
+                                                                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                                                                        <swrl:argument2 rdf:resource="urn:swrl:var#CP"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
                                                             </rdf:Description>
                                                         </rdf:rest>
                                                     </rdf:Description>
@@ -311,7 +348,19 @@ This class defines a product object to be created by the corresponding concrete 
                                                 <swrl:argument1 rdf:resource="urn:swrl:var#CP"/>
                                             </rdf:Description>
                                         </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory#abstract_factory_pattern_participant"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#o"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
