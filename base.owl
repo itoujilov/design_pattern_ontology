@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.1.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.2.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
@@ -207,6 +207,15 @@ This is a participant of a pattern, having the primary purpose of object creatio
 This is a software engineering entity (an object-oriented class, an object, etc.)
 which participates in a design pattern. Normally, an implementation of
 a design pattern is composed of many interrelated and collaborating participants.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#object">
+        <rdfs:comment xml:lang="en">An object.
+This is a software engineering object instantiated at runtime.</rdfs:comment>
     </owl:Class>
     
 
