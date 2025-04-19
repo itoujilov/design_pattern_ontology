@@ -128,7 +128,38 @@ THE SOFTWARE.</dc:rights>
 
     <!-- http://www.semanticweb.org/design_pattern_ontology/base#aggregates_instance -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#aggregates_instance"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#aggregates_instance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#composes"/>
+        <rdfs:comment xml:lang="en">Aggregates an instance.
+Aggregation implies that the aggregator owns or is responsible for the aggregatee. In other words,
+the aggregator has the aggregatee which is a part of the aggregator.
+This also means that the aggregator and the aggregatee have identical lifetimes.
+Aggregation is a stronger relationship than acquaintance and suggests tighter
+coupling between the objects.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#composes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#composes">
+        <rdfs:comment xml:lang="en">Composes.
+In the object-oriented design the composition is opposed to the inheritance.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#has_acquaintance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#has_acquaintance">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#composes"/>
+        <rdfs:comment xml:lang="en">Has an acquaintance.
+Acquaintance implies that the subject merely knows of the object. Sometimes
+this is called the &quot;association&quot; or &quot;using&quot; relationship. Acquainted objects may
+request operations on each other but they are not responsible for each other.
+This is a weaker relationship than aggregation and suggests looser coupling
+between the objects.</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
