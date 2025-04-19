@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/1.2.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.2.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
