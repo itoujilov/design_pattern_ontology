@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/design_pattern_ontology/prototype#"
+     xml:base="http://www.semanticweb.org/design_pattern_ontology/prototype"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:base="http://www.semanticweb.org/design_pattern_ontology/base#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/prototype">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/prototype/0.0.0"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base"/>
+        <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
+        <dc:description xml:lang="en">This is a module of the design pattern ontology.
+It describes the prototype pattern. This ontology is based on the book:
+E. Gamma, R. Helm, R. Johnson, J. Vlissides, Design patterns.
+
+Run a reasoner to see participants, classified under the prototype pattern.</dc:description>
+        <dc:rights xml:lang="en">The MIT License
+
+Copyright 2025 Igor Toujilov.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the `Software`), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED `AS IS`, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</dc:rights>
+        <dc:title xml:lang="en">Prototype Design Pattern Ontology</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/prototype#prototype_pattern_participant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/prototype#prototype_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#creational_pattern_participant"/>
+        <rdfs:comment xml:lang="en">A prototype pattern participant.
+This is a participant of the prototype pattern.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
