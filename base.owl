@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.2.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.3.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
@@ -136,6 +136,15 @@ the aggregator has the aggregatee which is a part of the aggregator.
 This also means that the aggregator and the aggregatee have identical lifetimes.
 Aggregation is a stronger relationship than acquaintance and suggests tighter
 coupling between the objects.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#clones -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#clones">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object"/>
     </owl:ObjectProperty>
     
 
