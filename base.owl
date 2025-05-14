@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.3.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.4.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
@@ -265,6 +265,17 @@ This is a software engineering object instantiated at runtime.</rdfs:comment>
     <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class">
         <rdfs:comment xml:lang="en">An object-oriented class.
 This is an artifact of software engineering.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#singleton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#singleton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <rdfs:comment xml:lang="en">A singleton.
+This is a class which can only have no more than a single instance of itself
+during each runtime lifecycle.</rdfs:comment>
     </owl:Class>
     
 
