@@ -11,7 +11,7 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/adapter">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/adapter/1.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/adapter/1.0.1"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is a module of the design pattern ontology.
@@ -95,7 +95,7 @@ THE SOFTWARE.</dc:rights>
 
     <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/adapter#adapter_pattern_participant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#structural_pattern_participant"/>
-        <rdfs:comment xml:lang="en">A adapter pattern participant.
+        <rdfs:comment xml:lang="en">An adapter pattern participant.
 This is a participant of the adapter pattern.</rdfs:comment>
     </owl:Class>
     
