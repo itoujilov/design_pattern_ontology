@@ -8,7 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/base">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.4.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base/2.5.0"/>
         <dc:bibliographicCitation xml:lang="en">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides,
 Design patterns: elements of reusable object-oriented software. 1994
         </dc:bibliographicCitation>
@@ -149,6 +149,15 @@ coupling between the objects.</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#collects_objects_of_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#collects_objects_of_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#collection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/design_pattern_ontology/base#composes -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#composes">
@@ -216,6 +225,16 @@ In a software engineering implementation, this class cannot be instantiated. In 
         <rdfs:comment xml:lang="en">A behavioral pattern participant.
 This is a participant of a pattern, having the primary purpose to design the
 ways in which classes or objects interact and distribute responsibility.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/base#collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/base#collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#object-oriented_class"/>
+        <rdfs:comment xml:lang="en">A collection.
+This is a collection of objects.</rdfs:comment>
     </owl:Class>
     
 
