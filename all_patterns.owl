@@ -9,7 +9,7 @@
      xmlns:base="http://www.semanticweb.org/design_pattern_ontology/base#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/design_pattern_ontology/all_patterns">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/all_patterns/4.0.0"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/design_pattern_ontology/all_patterns/5.0.0"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/abstract_factory"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/adapter"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/bridge"/>
@@ -17,6 +17,7 @@
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/factory_method"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/prototype"/>
         <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/singleton"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/design_pattern_ontology/composite"/>
         <dc:creator xml:lang="en">Igor Toujilov</dc:creator>
         <dc:description xml:lang="en">This is an aggregation of all current patterns in the design patterns
 described in the book:
