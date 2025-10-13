@@ -91,20 +91,13 @@ THE SOFTWARE.</dc:rights>
     
 
 
-    
+    <!-- http://www.semanticweb.org/design_pattern_ontology/decorator#decorator_pattern_participant -->
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
+    <owl:Class rdf:about="http://www.semanticweb.org/design_pattern_ontology/decorator#decorator_pattern_participant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#structural_pattern_participant"/>
+        <rdfs:comment xml:lang="en">A decorator pattern participant.
+This is a participant of the decorator pattern.</rdfs:comment>
+    </owl:Class>
 </rdf:RDF>
 
 
