@@ -98,6 +98,53 @@ THE SOFTWARE.</dc:rights>
         <rdfs:comment xml:lang="en">A decorator pattern participant.
 This is a participant of the decorator pattern.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractComponent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractComponent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractDecorator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractDecorator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#abstract_class"/>
+        <base:aggregates_instance rdf:resource="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractComponent"/>
+        <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/decorator#ConcreteComponent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/decorator#ConcreteComponent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/design_pattern_ontology/decorator#ConcreteDecorator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/design_pattern_ontology/decorator#ConcreteDecorator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/design_pattern_ontology/base#concrete_class"/>
+        <base:inherits rdf:resource="http://www.semanticweb.org/design_pattern_ontology/decorator#AbstractDecorator"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
